@@ -1,0 +1,32 @@
+---
+title: "Real-time root growth report"
+author: "Kaining Zhou"
+date: '`r format(Sys.Date(), "%B %d, %Y")`'
+output: 
+  prettydoc::html_pretty:
+    theme: architect
+    highlight: github
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+```{r}
+setwd("C:/Users/Kaining/Dropbox/daily")
+```
+#### Root images were taken by the automated Minirhizotron system in the field. Root length was estimated by a model based on convolutional neural network. Results of this report are derived from those estimated root length. This report is the final part of the fully automated workflow for Minirhizotron-based *in situ* root phenotyping: from image acquisition to analysis
+
+#### **1. Root length density estimated by model**
+
+This is the graph of root length density in different soil depth changing with date.
+
+```{r, echo=F, fig.align='center', out.width="50%"}
+knitr::include_graphics(c('C:/Users/Kaining/Dropbox/daily/RLD change with DAP.png'))
+```
+
+
+#### **2. Soil profile**
+```{r, echo=F, fig.align='center', out.width="50%"}
+knitr::include_graphics(c('C:/Users/Kaining/Dropbox/daily/Soil profile with annotation.jpg'))
+```
